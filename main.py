@@ -44,7 +44,6 @@ def chat(user_message):
     )
 
     raw = response["message"]["content"]
-    print(f"\n[RAW MODEL RESPONSE]\n{raw}\n[END RAW]\n")
 
     # strip markdown if wrapped
     if "```" in raw:
